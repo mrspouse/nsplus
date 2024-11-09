@@ -1,12 +1,12 @@
 {
   "domain": "nsplus",
   "name": "nsplus",
-  "codeowners": [
-    "@mrspouse"
-  ],
+  "codeowners": ["@mrspouse"],
   "config_flow": true,
-  "documentation": "https://github.com/mrspouse/nsplus",
+  "documentation": "https://www.home-assistant.io/integrations/nightscout",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/mrspouse/nsplus/issues",
-  "version": "0.0.0"
+  "loggers": ["py_nightscout"],
+  "quality_scale": "platinum",
+  "requirements": ["py-nightscout==1.2.2"],
+  "version": "0.0.1"
 }

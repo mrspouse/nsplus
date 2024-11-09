@@ -21,7 +21,7 @@ SCAN_INTERVAL = timedelta(minutes=1)
 
 _LOGGER = logging.getLogger(__name__)
 
-DEFAULT_NAME = "Blood Glucose"
+DEFAULT_NAME = "Nightscout SGV"
 
 
 async def async_setup_entry(
@@ -31,7 +31,7 @@ async def async_setup_entry(
 ) -> None:
     """Set up the Glucose Sensor."""
     api = hass.data[DOMAIN][entry.entry_id]
-    async_add_entities([NightscoutSensor(api, "Blood Sugar", entry.unique_id)], True)
+    async_add_entities([NightscoutSensor(api, "Nightscout SGV", entry.unique_id)], True)
 
 
 class NightscoutSensor(SensorEntity):
